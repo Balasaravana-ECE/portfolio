@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>portfolio</h1>
+
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <p class="icon" onclick="close()"> Cancel</p>
+                </ul>
+
+                <p class="icon" onclick="open()">Menu</p>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'am <span>Balasaravana </span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="2.jpg" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nisi facilis odio aut accusantium similique reiciendis mollitia molestiae qui enim, dicta repudiandae, autem laboriosam repellendus consequuntur incidunt fuga sapiente velit.</p>
+
+                    <div class="tap-titles">
+                        <p class="tab-links" onclick="opentab(edu)">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="edu">
+                        <ul>
+                            <li><span>Electronis And Communication Engineering</span><br>
+                            Kangeyam Institute Of Technology<br>
+                        CGPA:7.20</li>
+                        <li><span>Higher Secondary</span><br>
+                            K.S.C govt hr sec school<br>
+                        percentage:66%</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Skills-------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="html.png" alt="html" class="skill-img">
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <img src="css-3.png" alt="html" class="skill-img">
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <img src="java-script.png" alt="html" class="skill-img">
+                    <h2>Javascript</h2>
+                </div>
+                <div>
+                    <img src="bootstrap.png" alt="html" class="skill-img">
+                    <h2>Bootstrap</h2>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<!-- 
+    -----------------------------------Project--------------------- -->
+
+<div id="projects">
+    <div class="container">
+        <div class="sub-title">My Projects</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="2.jpg">
+                <div class="layer">
+                    <h1>To-Do List</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, cum!</p>
+                    <a href="https://todolist-note.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="2.jpg">
+                <div class="layer">
+                    <h1>Bookskey</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, cum!</p>
+                    <a href="https://bookskey-web-page.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="2.jpg">
+                <div class="layer">
+                    <h1>E-commerse web</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, cum!</p>
+                    <a href="https://fashionecommerceweb.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- --------------------------contact----------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>saravanags195@gmail.com</p>
+                <p>+91-7871568803</p>
+                <div class="social-icons">
+                    <a> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <a href="RenderCV_sb2nov_Theme (5).pdf" download class="btn btn2">Downlode CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="text" placeholder="Your Email" name="email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- ----------------------footer------------------------------- -->
+  <div class="copyright">
+    <p>Copyright o saravana</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+
+    <!-- <script>
+        var tablink=document.getElementsByClassName(".tab-links")
+        var tabcontent=document.getElementsByClassName(".tab-content")
+        function opentab(tabname){
+            for( tablink of tablink){
+                tablink.classList.remove("")
+            }
+        }
+    </script> -->
+</body>
+</html>
