@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balasaravana portfolio</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+     <header id="header">
+        <h2 class="pd-l">Portfolio</h2>
+        <nav class="menubar">
+            <ul>
+                <li><a class="hideonmobile" href="#header">Home</a></li>
+                <li><a class="hideonmobile" href="#about">About</a></li>
+                <li><a class="hideonmobile" href="#services">Skills</a></li>
+                <li><a class="hideonmobile" href="#projects">Projects</a></li>
+                <li><a class="hideonmobile" href="#contact">Contact</a></li>
+                <li class="menu-btn hideonpc" onclick=showsidebar()>menu</li>
+            </ul>
+        </nav>
+    </header>
+
+       <nav class="side-menu">
+        <h3 class="cancel-btn m-r" onclick="closesidebar()">cancel</h3>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+
+<!-- -------------------home page ------------------------------ -->
+
+<section class="home">
+    <div class="home-container pd-l">
+    <h3>Front-End Developer</h3>
+    <h2>Hi,I'am <span>Blasaravana.G.S</span></h2>
+    <div class="link">
+        <a href="https://www.linkedin.com/in/balasaravana-g-s/"><img src="linkedin.png"></a>
+        <a href="https://github.com/Balasaravana-ECE" class="git"><img src="github (1).png"></a>
+    </div>
+    </div>
+   
+
+</section>
+
+ <!-- ---------------------about------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" alt="image">
+                </div>
+                <div class="about-col-2" style="padding-right: 20px;">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="line-height: 1.5;">I am an Entry-level <strong>Software Developer and Frontend</strong> Enthusiast focused on building clean, efficient, and user-friendly applications. I am proficient in core web technologies including <strong>HTML, CSS, and JavaScript</strong>, backed by a solid foundation in <strong>C programming</strong> and data handling using <strong>MySQL.</strong> I am eager to use this technical knowledge to write optimized code, contribute to innovative projects, and help develop responsive applications. Committed to continuous learning, I seek a dynamic development role where I can apply my skills and grow within a fast-paced team.</p>
+
+                    <div class="tap-titles">
+                        <p class="tab-links" onclick="opentab(edu)">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="edu">
+                        <ul>
+                            <li><span>Electronis And Communication Engineering</span><br>
+                            Kangeyam Institute Of Technology<br>
+                        CGPA:7.20</li>
+                        <li><span>Higher Secondary</span><br>
+                            K.S.C govt hr sec school<br>
+                        percentage:66%</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- -----------------Skills-------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="html.png" alt="html" class="skill-img">
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <img src="css-3.png" alt="html" class="skill-img">
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <img src="java-script.png" alt="html" class="skill-img">
+                    <h2>Javascript</h2>
+                </div>
+                <div>
+                    <img src="mysql.png" alt="html" class="skill-img">
+                    <h2>MySQL</h2>
+                </div>
+                <div>
+                    <img src="c.png" alt="html" class="skill-img">
+                    <h2>c programming</h2>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+      
+<!-- -----------------------------------Project--------------------- -->
+ <div id="projects">
+    <div class="container">
+        <div class="sub-title">My Projects</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="screen1.png">
+                <div class="layer">
+                    <h1>To-Do List</h1>
+                    <p> Implemented add and delete functionality to manage daily tasks dynamically.
+</p>
+                    <a href="https://todolistcont-webpage.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="screen2.png">
+                <div class="layer">
+                    <h1>Bookskey</h1>
+                    <p>Implemented add and delete functionality for managing book entries dynamically</p>
+                    <a href="https://bookskey-web-page.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="2.jpg">
+                <div class="layer">
+                    <h1>E-commerse web</h1>
+                    <p>Designed a product showcase page with neatly arranged product cards and hover effects.
+◦ Created a Blog and About section to showcase product updates, brand information, and company details.</p>
+                    <a href="https://fashionecommerceweb.netlify.app/"><i class="fas fa-external-link-alt">link</i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- --------------------------contact----------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>saravanags195@gmail.com</p>
+                <p>+91-7871568803</p>
+                <div class="social-icons">
+                    <a> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <a href="Balasaravana_g_s_ECE (4).pdf" download class="btn btn2">Downlode CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="text" placeholder="Your Email" name="email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <script >
+
+    var sidebar = document.querySelector(".side-menu");
+             var menubar = document.querySelector(".menubar");
+            function showsidebar(){
+               
+                sidebar.style.display='block'
+                menubar.style.display='none'
+            }
+            function closesidebar(){
+                sidebar.style.display='none'
+                menubar.style.display='block'
+            }
+            </script>
+        
+</body>
+
+</html>
